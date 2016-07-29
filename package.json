@@ -1,0 +1,13 @@
+{
+  "name": "thf",
+  "version": "0.0.1",
+  "description": "甜小立's blog",
+  "main": "index.js",
+  "scripts": {
+    "serve": "./bin/serve",
+    "deploy": "./bin/deploy",
+    "update": "./bin/update"
+  },
+  "author": "annethf@outlook.com",
+  "license": "MIT"
+}

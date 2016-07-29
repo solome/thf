@@ -1,0 +1,43 @@
+permalink   : /blog/:year/:title/
+markdown    : kramdown
+highlighter : pygments
+gems: [jekyll-paginate]
+
+paginate: 3
+paginate_path: "/blog/page/:num/"
+comments: true
+
+source: source
+destination: _site
+sass:
+  sass_dir: _scss
+  style: compressed # expanded
+
+title: "甜小立"
+description: "甜小立的网络小空间"
+keywords: "Information Engineering, DAC, MATLAB, iOS, C/C++,"
+url: http://i.juyipeng.net
+baseurl: "/thf"
+
+repo: http://github.com/solome/thf
+disqus_shortname: "annethf"
+disqus_site_shortname: "annethf"
+
+author:
+  name      : "甜小立"
+  job       : "Postgraduate Student"
+  bio       : "College of Information Engineering, Northwest A&F University."
+  thumb     : /images/thf.png
+  email     : annethf@outlook.com
+  url       : http://i.juyipeng.net/thf
+  github    : http://github.com/annethf
+
+navbar:
+  - slug: about
+    title: about
+  - slug: blog
+    title: blog
+  - slug: resume
+    title: resume
+
+exclude: ["gulp", "node_modules", "bower", "bower_components", "config.rb", "src", "Gemfile", "Gemfile.lock", ".rvmrc", ".rbenv-version", "package.json", "gulpfile.js", "README.md", "Rakefile", "changelog.md"]
