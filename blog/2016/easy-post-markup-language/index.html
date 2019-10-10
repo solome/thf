@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>给自己的博客文章穿上美丽的外衣</title>
+    <meta name="description" content="编辑HTML标签是件及其繁琐的事情，做些配置让编辑文章变得简单容易。當然，基本語法自然採用Markdown，下面僅對一些特殊場景做些簡單說明。">
+
+    <link rel="stylesheet" href="/thf/css/main.css">
+    <link rel="canonical" href="https://solome.js.org/thf/blog/2016/easy-post-markup-language/">
+    <link rel="alternate" type="application/rss+xml" title="甜小立" href="https://solome.js.org/thf/feed.xml" />
+    <link rel="Shortcut Icon" href="/thf/images/favicon.ico">
+    <link rel="Bookmark" href="/thf/images/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/thf/images/tian.png">
+  </head>
+
+  <body>
+    <main>
+      <header class="site-header">
+  <div class="container">
+    <h1><a href="/thf/blog">甜小立<span>'s blog</span></a></h1>
+
+    <button type="button" class="sliding-panel-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="navbar sliding-panel-content">
+      <ul>
+        
+          <li><a href="/thf/about" title="about" target="_blank">about</a></li>
+        
+          <li><a href="/thf/blog" title="blog" target="_blank">blog</a></li>
+        
+          <li><a href="/thf/resume" title="resume" target="_blank">resume</a></li>
+        
+        <li><a href="/thf/feed.xml" target="_blank"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="sliding-panel-fade-screen"></div>
+
+
+      <div class="container">
+        <article role="article" class="post">
+
+  <div class="card">
+    <header class="post-header">
+      <h1 class="post-title">给自己的博客文章穿上美丽的外衣</h1>
+      <p class="post-meta">Jul 29, 2016</p>
+    </header>
+
+    <div class="post-content">
+      <p>编辑<code class="highlighter-rouge">HTML</code>标签是件及其繁琐的事情，做些配置让编辑文章变得简单容易。當然，基本語法自然採用<a href="http://daringfireball.net/projects/markdown/">Markdown</a>，下面僅對一些特殊場景做些簡單說明。</p>
+
+<h3 id="源代碼">源代碼</h3>
+
+<p>放置一段<code class="highlighter-rouge">ruby</code>源碼，效果如下：</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span>
+</code></pre></div></div>
+
+<p>如果想顯示如上效果，你可以這樣寫：</p>
+
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+    <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+  <span class="k">end</span>
+  <span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+  <span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span>
+</code></pre></div></div>
+
+<p>也能這樣寫（顯示效果是相似的）：</p>
+
+<figure class="highlight"><pre><code class="language-text" data-lang="text">{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=&gt; prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}</code></pre></figure>
+
+<h3 id="帶入數學公式">帶入數學公式</h3>
+
+<p>比如經典的<a href="https://zh.wikipedia.org/wiki/%E5%82%85%E9%87%8C%E5%8F%B6%E5%8F%98%E6%8D%A2">傅立叶变换</a>公式：</p>
+
+<script type="math/tex; mode=display">\widehat{f}(t) =  \int_{-\infty}^{\infty} f(x) e^{-2\pi ixt}dx</script>
+
+<p>這種公式效果可以通過
+<a href="https://www.latex-project.org/"><b><span lang="en">L<span style="font-variant: small-caps; margin-left: -0.3em; vertical-align: 0.33ex; line-height: 0; margin-right: -0.1em">a</span>T<span style="text-transform: uppercase; margin-left: -0.1667em; vertical-align: -0.5ex; line-height: 0; margin-right: -0.125em">e</span>X</span></b></a>的語法來實現（使用<code class="highlighter-rouge">$$</code>包裹）：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$$\widehat{f}(t) =  \int_{-\infty}^{\infty} f(x) e^{-2\pi ixt}dx$$
+</code></pre></div></div>
+
+<p>這樣就可以在博客中添加數學相關的公式了。</p>
+
+
+    </div>
+
+    
+
+  </div>
+
+</article>
+
+      </div>
+
+      <footer class="site-footer">
+  <div class="container">
+    <ul class="social">
+  <li><a href="https://github.com/annethf" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+</ul>
+
+    <p class="txt-medium-gray">
+      <small>&copy;2015-2019 <a href="mailto:annethf@outlook.com">Huifang Tian</a>, All rights reserved.</small>
+    </p>
+  </div>
+</footer>
+
+      <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script>
+      $(document).ready(function() {
+        $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
+          $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
+          e.preventDefault();
+        });
+      });
+      </script>
+      <script src="https://use.fontawesome.com/14d053f92c.js"></script>
+      <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    </main>
+  </body>
+</html>
