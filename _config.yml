@@ -5,7 +5,6 @@ gems: [jekyll-paginate]
 
 paginate: 3
 paginate_path: "/blog/page/:num/"
-comments: true
 
 source: source
 destination: _site
@@ -15,22 +14,20 @@ sass:
 
 title: "甜小立"
 description: "甜小立的网络小空间"
-keywords: "Information Engineering, DAC, MATLAB, iOS, C/C++,"
-url: http://i.juyipeng.net
+keywords: ""
+url: https://solome.js.org
 baseurl: "/thf"
 
 repo: http://github.com/solome/thf
-disqus_shortname: "annethf"
-disqus_site_shortname: "annethf"
 
 author:
   name      : "甜小立"
-  job       : "Postgraduate Student"
-  bio       : "College of Information Engineering, Northwest A&F University."
+  job       : "工程师"
+  bio       : "給國防領域“拖後腿”的工程師..."
   thumb     : /images/thf.png
   email     : annethf@outlook.com
-  url       : http://i.juyipeng.net/thf
-  github    : http://github.com/annethf
+  url       : https://solome.js.org/thf
+  github    : https://github.com/annethf
 
 navbar:
   - slug: about

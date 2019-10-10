@@ -29,7 +29,6 @@ print_hi('Tom')
 
 如果想顯示如上效果，你可以這樣寫：
 
-```
   ```ruby
   def print_hi(name)
     puts "Hi, #{name}"
@@ -37,7 +36,6 @@ print_hi('Tom')
   print_hi('Tom')
   #=> prints 'Hi, Tom' to STDOUT.
   ```
-```
 
 也能這樣寫（顯示效果是相似的）：
 
@@ -65,6 +63,4 @@ $$\widehat{f}(t) =  \int_{-\infty}^{\infty} f(x) e^{-2\pi ixt}dx$$
 ```
 
 這樣就可以在博客中添加數學相關的公式了。
-
-
 
